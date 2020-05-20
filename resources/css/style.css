@@ -177,7 +177,7 @@ li {
     .info_left h1 {
       font-size: 2.5em;
       padding: 0;
-      margin: 0em 0em 0em 0em;
+      margin: 1em 0em 0em 0em;
     }
 
     .info_left p {
@@ -459,7 +459,21 @@ background-color: lightgray;
 /* video */
 
 
+.video {
+  display:flex;
+  flex-wrap:wrap;
+}
+ 
+.video h1{
+  display: flex;
+  font-size: 2.8em;
+  margin: 1em 0em 0.5em 0em;
+ width: 100%;
+justify-content: center;
+}  
+
 video{
+  display: flex;
   width:100%;
 }
 
@@ -471,7 +485,8 @@ video{
 }
 
 .video_text h1{
-font-size: 1.3em;
+  justify-content: left;
+font-size: 3em;
 margin: 0;
 }
 
@@ -534,13 +549,14 @@ background-position: center;
   /*FOOTER*/
   footer {
     display: inline-flex;
-
-    height: 7em;
     background-color: #f1f1f1;
    width: 100%;
    align-items: center;
   }
-
+ footer nav{
+   display: flex;
+   padding: 2em;
+ }
 
   footer h3{
     color: gray;
